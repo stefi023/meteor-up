@@ -3,7 +3,7 @@
 set -e
 # we use this data directory for the backward compatibility
 # older mup uses mongodb from apt-get and they used this data directory
-sudo mkdir -p /var/lib/mongodb
+sudo mkdir -p /var/lib/mongodb2
 
 sudo docker pull mongo:latest
 set +e
@@ -13,8 +13,8 @@ set -e
 sudo docker run \
   -d \
   --restart=always \
-  --publish=127.0.0.1:27017:27017 \
-  --volume=/var/lib/mongodb:/data/db \
+  --publish=127.0.0.1:27777:27777 \
+  --volume=/var/lib/mongodb2:/data/db \
   --volume=/opt/mongodb/mongodb.conf:/mongodb.conf \
   --name=mongodb \
   mongo mongod -f /mongodb.conf

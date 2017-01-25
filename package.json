@@ -1,10 +1,10 @@
 {
-  "name": "mup",
+  "name": "mup2",
   "version": "1.0.4",
   "description": "Production Quality Meteor Deployments",
   "main": "lib/index.js",
   "bin": {
-    "mup": "./index.js"
+    "mup2": "./index.js"
   },
   "scripts": {
     "prepublish": "nofat make",
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kadirahq/meteor-up.git"
+    "url": "git+https://github.com/stefi023/meteor-up.git"
   },
   "keywords": [
     "meteor"
@@ -21,9 +21,9 @@
   "author": "Kadira Inc.",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kadirahq/meteor-up/issues"
+    "url": "https://github.com/stefi023/meteor-up/issues"
   },
-  "homepage": "https://github.com/kadirahq/meteor-up#readme",
+  "homepage": "https://github.com/stefi023/meteor-up#readme",
   "devDependencies": {
     "nofat": "1.0.x",
     "ssh2": "0.4.x"
